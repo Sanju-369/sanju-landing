@@ -18,10 +18,10 @@ export default function Hero() {
         <div className="max-w-4xl mx-auto text-center">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6">
-              Revolutionize Your
+               Transform Your Research 
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-orange-600">
                 {" "}
-                YouTube Research
+                Less Then Time For a Cofee Break 
               </span>
             </h1>
           </motion.div>
@@ -37,20 +37,26 @@ export default function Hero() {
           </motion.p>
 
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.4 }}
-            className="flex flex-col sm:flex-row items-center justify-center gap-4"
-          >
-            <Button size="lg" className="bg-red-600 hover:bg-red-700 text-white px-8">
-              <Search className="mr-2 h-5 w-5" />
-              Start Researching
-            </Button>
-            <Button size="lg" variant="outline" className="text-white border-red-500 hover:bg-red-500/20">
-              <Sparkles className="mr-2 h-5 w-5" />
-              See How It Works
-            </Button>
-          </motion.div>
+  initial={{ opacity: 0, y: 20 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.5, delay: 0.4 }}
+  className="flex flex-col sm:flex-row items-center justify-center gap-4"
+>
+  <a href="https://php-subscription-app.onrender.com" target="_blank" rel="noopener noreferrer">
+    <Button size="lg" className="bg-red-600 hover:bg-red-700 text-white px-8">
+      <Search className="mr-2 h-5 w-5" />
+      Start Researching
+    </Button>
+  </a>
+
+  <a href="https://php-subscription-app.onrender.com" target="_blank" rel="noopener noreferrer">
+    <Button size="lg" variant="outline" className="text-white border-red-500 hover:bg-red-500/20">
+      <Sparkles className="mr-2 h-5 w-5" />
+      See How It Works
+    </Button>
+  </a>
+</motion.div>
+
         </div>
       </div>
 
