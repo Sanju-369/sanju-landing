@@ -1,11 +1,10 @@
 import type { Metadata } from 'next'
 import './globals.css'
-import Image from 'next/image'
 
 export const metadata: Metadata = {
-  title: 'Tube Trend Generator',
-  description: 'Created with Tube Trend',
-  generator: 'Tube Trend Generator',
+  title: 'TubeTrend',
+  description: 'Created with TubeTrend',
+  generator: 'TubeTrend Generator',
 }
 
 export default function RootLayout({
@@ -15,12 +14,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
-        <div className="container">
-          <Image src="/logo.png" alt="Tube Trend Logo" width={150} height={150} className="logo" />
-          {children}
-        </div>
-      </body>
+      <body>{children}</body>
     </html>
   )
 }
