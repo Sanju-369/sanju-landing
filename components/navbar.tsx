@@ -35,7 +35,7 @@ export default function Navbar() {
       <div className="hidden md:flex items-center space-x-4">
         <Button
           className="bg-gradient-to-r from-teal-500 to-blue-500 text-white hover:opacity-90"
-          onClick={() => (window.location.href = "/login")}
+          onClick={() => (window.location.href = "https://login-sub-id.onrender.com")}
         >
           Login
         </Button>
