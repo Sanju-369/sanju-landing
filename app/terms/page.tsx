@@ -15,7 +15,7 @@ export default function Terms() {
           <h2 className="text-2xl font-semibold mt-8 mb-4">2. Use License</h2>
           <p className="text-gray-400">
             Permission is granted to temporarily access Tube Trend services for personal, non-commercial transitory
-            viewing only.
+            viewing only. and one more thing we are not Affiliated By You Tube We Used its Api Key
           </p>
 
           <h2 className="text-2xl font-semibold mt-8 mb-4">3. Disclaimer</h2>
