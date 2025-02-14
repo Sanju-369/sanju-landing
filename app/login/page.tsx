@@ -1,11 +1,20 @@
 "use client"
-
+import Head from "next/head";
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import Image from "next/image"
-
+export default function Layout({ children }: { children: React.ReactNode }) {
+    return (
+        <>
+            <Head>
+                <meta name="google-site-verification" content="<meta name="google-site-verification" content="ZZC8q4luOrUBcrBjClrqL__Gt9OrXRcfsnTtCcl6-u4" />" />
+            </Head>
+            {children}
+        </>
+    );
+}
 export default function Login() {
   const [isLoading, setIsLoading] = useState(false)
 
