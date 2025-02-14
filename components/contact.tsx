@@ -43,14 +43,14 @@ export default function Contact() {
                 <MapPin className="w-6 h-6 text-teal-500 mt-1" />
                 <div>
                   <h3 className="text-white font-semibold mb-1">Address</h3>
-                  <p className="text-gray-400">123 Innovation Street, Tech City, TC 12345</p>
+                  <p className="text-gray-400">Berhampur,Ganjam,Odisha,India 760010</p>
                 </div>
               </div>
               <div className="flex items-start space-x-4">
                 <Mail className="w-6 h-6 text-teal-500 mt-1" />
                 <div>
                   <h3 className="text-white font-semibold mb-1">Email</h3>
-                  <p className="text-gray-400">contact@tubetrend.ai</p>
+                  <p className="text-gray-400">rs5163287@gmail.com</p>
                 </div>
               </div>
               <div className="flex items-start space-x-4">
