@@ -21,7 +21,7 @@ export default function LoginPage() {
     <>
       {/* Google Search Console Verification Meta Tag */}
       <Head>
-        <meta name="google-site-verification" content="ZZC8q4luOrUBcrBjClrqL__Gt9OrXRcfsnTtCcl6-u4" />
+         <meta name="google-site-verification" content="ZZC8q4luOrUBcrBjClrqL__Gt9OrXRcfsnTtCcl6-u4" /> 
         <title>Login - Tube Trend</title>
       </Head>
 
