@@ -1,5 +1,6 @@
 import { ReactNode } from "react";
 import Head from "next/head";
+import "./globals.css"; // ✅ Import global styles
 
 export const metadata = {
   title: "TubeTrend",
