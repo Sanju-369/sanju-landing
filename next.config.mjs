@@ -1,17 +1,14 @@
-import { createRequire } from "module";
-const require = createRequire(import.meta.url);
-
-let userConfig = {};
+let userConfig = undefined;
 try {
-  userConfig = require("./v0-user-next.config.js"); // Use require() instead of await import()
+  userConfig = await import('./v0-user-next.config');
 } catch (e) {
-  console.warn("User config not found, using default settings.");
+  // ignore error
 }
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true, // Helps with debugging
-  output: "standalone", // Ensures Next.js serves public/ files properly
+  reactStrictMode: true, // Improves debugging
+  output: 'standalone', // Ensures Next.js serves public/ files properly
   eslint: {
     ignoreDuringBuilds: true,
   },
@@ -19,17 +16,35 @@ const nextConfig = {
     ignoreBuildErrors: true,
   },
   images: {
-    unoptimized: true, // Useful for static deployments
+    unoptimized: true,
   },
   experimental: {
-    appDir: true, // Ensures the App Router is enabled
     webpackBuildWorker: true,
     parallelServerBuildTraces: true,
     parallelServerCompiles: true,
   },
 };
 
-// ✅ Merge user-defined config safely
-const mergedConfig = { ...nextConfig, ...userConfig };
+mergeConfig(nextConfig, userConfig);
 
-export default mergedConfig;
+function mergeConfig(nextConfig, userConfig) {
+  if (!userConfig) {
+    return;
+  }
+
+  for (const key in userConfig) {
+    if (
+      typeof nextConfig[key] === 'object' &&
+      !Array.isArray(nextConfig[key])
+    ) {
+      nextConfig[key] = {
+        ...nextConfig[key],
+        ...userConfig[key],
+      };
+    } else {
+      nextConfig[key] = userConfig[key];
+    }
+  }
+}
+
+export default nextConfig;
