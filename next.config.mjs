@@ -7,9 +7,8 @@ try {
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true, // Ensures better debugging and strict mode
+  reactStrictMode: true, // Improves debugging
   output: 'standalone', // Ensures Next.js serves public/ files properly
-
   eslint: {
     ignoreDuringBuilds: true,
   },
