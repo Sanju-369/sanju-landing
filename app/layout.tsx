@@ -1,20 +1,19 @@
-import type { Metadata } from 'next'
-import './globals.css'
+import { ReactNode } from "react";
+import Head from "next/head";
 
-export const metadata: Metadata = {
-  title: 'TubeTrend',
-  description: 'Created with TubeTrend',
-  generator: 'TubeTrend Generator',
-}
+export const metadata = {
+  title: "TubeTrend",
+  description: "YouTube Research",
+};
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode
-}>) {
+export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
+      <head>
+        {/* Google Search Console Verification Meta Tag */}
+        <meta name="google-site-verification" content="ZZC8q4luOrUBcrBjClrqL__Gt9OrXRcfsnTtCcl6-u4" />
+      </head>
       <body>{children}</body>
     </html>
-  )
+  );
 }
