@@ -32,8 +32,9 @@ export default function Hero() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-gray-400 text-xl mb-8 max-w-2xl mx-auto"
           >
-            Harness the power of multi-agent AI to search, summarize, and create content from top YouTube videos in your
-            niche.
+           Harness the power of multi-agent AI to search, summarize, and create SEO-optimized content from top-performing YouTube videos in your niche
+            —boosting your digital marketing strategy and driving organic traffic.
+
           </motion.p>
 
           <motion.div
