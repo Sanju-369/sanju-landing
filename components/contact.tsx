@@ -71,26 +71,19 @@ export default function Contact() {
                   <p className="text-gray-400">rs5163287@gmail.com</p>
                 </div>
               </div>
-              <div className="flex items-start space-x-4">
-                <Phone className="w-6 h-6 text-teal-500 mt-1" />
-                <div>
-                  <h3 className="text-white font-semibold mb-1">Phone</h3>
-                  <p className="text-gray-400">+91 9876543210</p> {/* Replace with your number */}
-                </div>
-              </div>
 
               {/* Social Media Links */}
               <div className="flex space-x-6 mt-4">
-                <a href="https://youtube.com/" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.youtube.com/@TubeTrend-h2g" target="_blank" rel="noopener noreferrer">
                   <Youtube className="w-8 h-8 text-red-500 hover:text-red-400" />
                 </a>
-                <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.instagram.com/tubetrend369/" target="_blank" rel="noopener noreferrer">
                   <Instagram className="w-8 h-8 text-pink-500 hover:text-pink-400" />
                 </a>
-                <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
+                <a href="https://x.com/SinghRam99649" target="_blank" rel="noopener noreferrer">
                   <Twitter className="w-8 h-8 text-blue-500 hover:text-blue-400" />
                 </a>
-                <a href="https://facebook.com/" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.facebook.com/profile.php?id=61573321022890" target="_blank" rel="noopener noreferrer">
                   <Facebook className="w-8 h-8 text-blue-700 hover:text-blue-600" />
                 </a>
               </div>
