@@ -18,10 +18,10 @@ export default function Hero() {
         <div className="max-w-4xl mx-auto text-center">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6">
-               Transform Your Research 
+               YouTube Niche Researcher
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-orange-600">
                 {" "}
-                Less Then Time For a Cofee Break 
+                Validate Your YouTube Niche Right Now
               </span>
             </h1>
           </motion.div>
@@ -32,9 +32,8 @@ export default function Hero() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-gray-400 text-xl mb-8 max-w-2xl mx-auto"
           >
-           Harness the power of multi-agent AI to search, summarize, and create SEO-optimized content from top-performing YouTube videos in your niche
-            —boosting your digital marketing strategy and driving organic traffic.
-
+            TubeTrend Used The Powerof Multi-AI agent  to validate niches, fine-tune YouTube ideas,
+            and deliver one-stop topic research fueling rapid channel growth instantly.
           </motion.p>
 
           <motion.div
